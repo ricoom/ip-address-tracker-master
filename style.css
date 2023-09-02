@@ -31,6 +31,7 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: left;
+    border-radius: 5px;
    
 }
 h2{
@@ -58,6 +59,12 @@ border-right: 2px solid black;
 
 
     
+}
+.row-1  input::placeholder{
+    font-size: .6em;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300px;
 }
 .row-1 .inputs{
     display: flex;

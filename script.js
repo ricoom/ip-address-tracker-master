@@ -7,7 +7,7 @@ var ip;
 async function searchIp(){
     
   ip=document.getElementById('ipInput').value
- const response=fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_0fuK1VHv9Z1ChUM6WUEVaHSk4d3Nm&ipAddress=${ip}`)
+ const response=fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_0fuK1VHv9Z1ChUM6WUEVaHSk4d3Nm&ipAddress=${ip}&domain=${ip}`)
 const data = await (await response).json()
 var pos=data.location
 loadMap(pos.lat,pos.lng);
