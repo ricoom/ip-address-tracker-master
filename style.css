@@ -1,0 +1,104 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    padding: 3% 10% 0% 10%;
+    overflow: hidden;
+}
+.row-1{
+    background-image: url(/images/pattern-bg-desktop.png);
+    background-size: cover;
+    padding: 10% 10% 2% 10%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    width: 80%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+   
+}
+h2{
+    color:#fff;
+}
+#info{
+padding: 10px;
+border-right: 2px solid black;
+}
+#info p{
+    font-weight: 700;
+
+}
+#info:last-child{
+    border-right: 0px solid black;
+    }
+.row-1  input{
+    padding:20px 20px 10px 10px;
+    min-width: 50px;
+    max-height: 50px;
+    border-radius:10px 0px 0px 10px ;
+    font-size: 18px;
+    outline: none;
+    border: none;
+
+
+    
+}
+.row-1 .inputs{
+    display: flex;
+    justify-content: center;
+}
+.row-1 .submit{
+    border-radius:0px 10px 10px 0px ;
+    padding:10px ;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 17%) ;
+    cursor: pointer;
+
+
+ 
+}
+.row-1 .submit:focus{
+    background-color:hsl(0, 0%, 59%);
+
+}
+#map { 
+    height: 280px;
+
+
+
+ }
+.container{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+@media only screen and (max-width: 375px) {
+    .card{
+        width: 80%;
+        height: 100px;
+        flex-wrap: wrap;
+        overflow: scroll;
+        
+       
+       
+    }
+  }

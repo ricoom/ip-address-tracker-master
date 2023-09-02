@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ericochestra | IP Address Tracker</title>
+
+</head>
+<body>
+ <div class="container">
+ <div class="row-1">
+  <h2>IP Address Tracker</h2>
+  <div class="inputs">
+    <input type="text" name="" id="ipInput">
+    <button class="submit" onclick="searchIp()"><i><img src="/images/icon-arrow.svg" alt=""></i></button>
+  </div>
+  <div class="card" id="info_card">
+   
+    </div>
+  </div>
+
+  
+ </div>
+<div id="map">
+
+</div>
+
+
+ </div>
+
+  
+  <script src="/script.js"></script>
+</body>
+</html>
